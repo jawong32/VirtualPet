@@ -17,7 +17,9 @@ void ears() {
 }
 
 void eyes() {
-  fill(0);
-  ellipse(250, 100, 20, 20);
-  ellipse(300, 100, 20, 20);
+  fill(255, 255, 255);
+  ellipse(215, 150, 40, 40);
+  ellipse(285, 150, 40, 40);
+  ellipse(215, 150, 20, 20);
+  ellipse(285, 150, 20, 20);
 }
