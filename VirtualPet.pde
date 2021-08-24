@@ -1,10 +1,11 @@
 void setup() {
-  size(500, 700, P3D);
+  size(500, 700);
+  background(100);
   rectMode(CENTER);
 }
 
 void draw() {
-  fill(150);
+  fill(255);
   noStroke();
   rect(250, 200, 200, 350, 20);
   //ears();
