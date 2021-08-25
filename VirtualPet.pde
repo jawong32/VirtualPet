@@ -30,12 +30,11 @@ void eyes() {
 }
 
 void horns() {
-  quad(200, 200, 150, 300, 150, 400, 200, 600);
+  quad(150, 225, 150, 300, 150, 400, 200, 600);
 }
 
 void printCoordinate() {
   if (mousePressed) {
-      System.out.println(mouseX);
-      System.out.println(mouseY);
+      System.out.println(String.format("(%d, %d)", mouseX, mouseY));
   }
 }
