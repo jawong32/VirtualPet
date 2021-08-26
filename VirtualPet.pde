@@ -1,3 +1,6 @@
+final int HEAD_CENTER = 250;
+
+
 void setup() {
   size(500, 700);
   background(0);
@@ -11,11 +14,11 @@ void draw() {
   ears();
   eyes();
   horns();
-  printCoordinate();
+  printCoordinates();
 }
 
 void head() {
-  rect(250, 400, 200, 350, 20);
+  rect(HEAD_CENTER, 400, 200, 350, 20);
   ellipse(250, 230, 195, 50);
 }
 
@@ -36,9 +39,12 @@ void eyes() {
 void horns() {
   fill(255);
   quad(170, 245, 70, 225, 57, 280, 160, 295);
+  quad(330, 245, 430, 225, 443, 280, 340, 295);
+  quad(57, 280, 27, 217, 72, 134, 70, 225);
+  quad(443, 280, 473, 217, 428, 134, 430, 225);
 }
 
-void printCoordinate() {
+void printCoordinates() {
   if (mousePressed) {
       System.out.println(String.format("(%d, %d)", mouseX, mouseY));
   }
