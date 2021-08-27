@@ -24,14 +24,18 @@ void head() {
 
 void ears() {
   rotate(radians(-30));
+  pushMatrix();
   translate(-200, 10);
   arc(150, 330, 150, 60, 0, 180);
-  translate(200, -10);
+  popMatrix();
+  
   rotate(radians(60));
+  pushMatrix();
   translate(140, -250);
   fill(150);
   arc(350, 335, 150, 60, 0, 180);
-  translate(-140, 250);
+  popMatrix();
+  
   rotate(radians(-30));
 }
 
